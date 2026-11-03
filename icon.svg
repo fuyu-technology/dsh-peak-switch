@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#16181d"/>
+  <!-- 高峰曲线：代表工作日的深谷时段 -->
+  <path d="M10 46 L18 46 L22 20 L30 46 L38 46 L42 30 L46 46 L54 46"
+        fill="none" stroke="#f0a04b" stroke-width="3.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 空闲曲线：代表谷时的低价区间 -->
+  <path d="M10 54 H54" fill="none" stroke="#39d98a" stroke-width="2.4"
+        stroke-linecap="round" stroke-dasharray="5 5"/>
+</svg>

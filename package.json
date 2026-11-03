@@ -1,0 +1,63 @@
+{
+  "name": "dsh-peak-switch",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：设置页里的「峰谷回复」——按 DeepSeek 官方峰谷定价自动切换 QQ 回复策略，高峰时段可只放行私聊与 @ 叫名字。 | DSH plugin: peak/off-peak reply switch for QQ, driven by DeepSeek's official off-peak pricing windows.",
+  "author": "蝠羽科技",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "pricing",
+    "peak",
+    "off-peak",
+    "qq",
+    "batwing-tech"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "locale/*.json",
+    "lib"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0-rc <5"
+  },
+  "engines": {
+    "node": "^22.15.0 || >=24.0.0"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuyu-technology/dsh-peak-switch.git"
+  },
+  "homepage": "https://github.com/fuyu-technology/dsh-peak-switch#readme",
+  "bugs": {
+    "url": "https://github.com/fuyu-technology/dsh-peak-switch/issues"
+  }
+}
