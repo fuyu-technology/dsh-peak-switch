@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "DeepSeek Harness 插件：设置页里的「峰谷回复」——按 DeepSeek 官方峰谷定价自动切换 QQ 回复策略，高峰时段可只放行私聊与 @ 叫名字。 | DSH plugin: peak/off-peak reply switch for QQ, driven by DeepSeek's official off-peak pricing windows.",
   "author": "蝠羽科技",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "keywords": [
     "dsh",
@@ -23,6 +23,8 @@
     "./icon": "./icon.svg"
   },
   "files": [
+    "LICENSE",
+    "NOTICE",
     "index.js",
     "client.js",
     "cordis.patch.yml",
